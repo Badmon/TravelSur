@@ -7,27 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Tuto1 extends AppCompatActivity {
+public class Tuto3 extends AppCompatActivity {
 
-    ImageView img_tuto1;
+    ImageView img_tuto3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tuto1);
+        setContentView(R.layout.activity_tuto3);
 
-        img_tuto1 = findViewById(R.id.tuto1);
-        img_tuto1.setOnClickListener(new View.OnClickListener() {
+        img_tuto3 = findViewById(R.id.tuto3);
+        img_tuto3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intentReg = new Intent(Tuto1.this, Tuto2.class);
-                Tuto1.this.startActivity(intentReg);
+                Intent intentReg = new Intent(Tuto3.this, Tuto4.class);
+                Tuto3.this.startActivity(intentReg);
             }
         });
-
     }
-
-
-
 }
