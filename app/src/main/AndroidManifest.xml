@@ -12,19 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Restaurantes"></activity>
-        <activity
-            android:name=".ImgPucusana"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".Prueba" />
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".Tuto1"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Restaurantes" />
+        <activity
+            android:name=".ImgPucusana"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Prueba" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
         </activity>
     </application>
 
