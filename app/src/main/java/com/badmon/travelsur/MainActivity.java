@@ -15,7 +15,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button  btn_scaneo;
+    Button  btn_scaneo, btn_restau;
     String qr="hola",contenido;
 
     @Override
@@ -24,6 +24,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn_scaneo = findViewById(R.id.btn_scan);
+
+
+
+        btn_restau = findViewById(R.id.btn_restaurantes);
+        btn_restau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentReg = new Intent(MainActivity.this, Restaurantes.class);
+                MainActivity.this.startActivity(intentReg);
+            }
+        });
+
 
         final Activity activity = this;
         btn_scaneo.setOnClickListener(new View.OnClickListener() {

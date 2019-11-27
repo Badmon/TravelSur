@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:paddingTop="40dp"
         android:paddingLeft="40dp"
-        android:src="@drawable/textmain"
+        android:src="@drawable/barra"
         />
 
     <TextView
@@ -31,7 +31,8 @@
         android:layout_height="200dp"
         android:orientation="vertical">
 
-    <ImageView
+    <Button
+        android:id="@+id/btn_restaurantes"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
